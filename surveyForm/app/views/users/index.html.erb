@@ -1,0 +1,24 @@
+<%  if flash["errors"]  %>
+	<%  flash["errors"].each { |error| %>
+		<p><%=  error  %></p>
+	<% } %>
+<%  end %>
+
+<div class="form">
+	<form action="/users/new" method="post">
+		<input type="hidden" name="authenticity_token" value="token_value">
+		<p>Your Name:</p><input type="text" name="user[name]"  value="">
+		<p>Dojo Location:</p><select name="user[dojo_location]">
+			<option value="Mountain View">Mountain View</option>
+			<option value="Seattle">Seattle</option>
+			<option value="New York">New York</option>
+		</select>
+		<p>Favorite Language:</p><select name="user[fav_language]">
+			<option value="JavaScript">JavaScript</option>
+			<option value="Python">Python</option>
+			<option value="Java">Java</option>
+		</select>
+		<p>Comment (optional):</p><textarea name="user[comment]" ></textarea> 
+		<button type="submit">Submit</button>
+	</form>
+</div>

@@ -1,0 +1,42 @@
+<div class="wrapper">
+
+	<div>
+	Your Gold: <p class="gold_count"><%= session["gold"]  %></p>
+	</div>
+	<form action="/rpg/process" method="post">
+		<h2>Farm</h2>
+		<p>(earns 10-20 golds)</p>
+		<input type="hidden" name="authenticity_token" value="token_value">
+		<input type="hidden" name="place" value="farm">
+		<button>Find Gold!</button>
+	</form>
+	<form action="/rpg/process" method="post">
+		<h2>Cave</h2>
+		<p>(earns 5-10 golds)</p>
+		<input type="hidden" name="authenticity_token" value="token_value">
+		<input type="hidden" name="place" value="cave">
+		<button>Find Gold!</button>
+	</form>
+	<form action="/rpg/process" method="post">
+		<h2>House</h2>
+		<p>(earns 2-5 golds)</p>
+		<input type="hidden" name="authenticity_token" value="token_value">
+		<input type="hidden" name="place" value="house">
+		<button>Find Gold!</button>
+	</form>
+	<form action="/rpg/process" method="post">
+		<h2>Casino</h2>
+		<p>(earns/takes 0-50 golds)</p>
+		<input type="hidden" name="authenticity_token" value="token_value">
+		<input type="hidden" name="place" value="casino">
+		<button>Find Gold!</button>
+	</form>
+
+	<p>Activities:</p>
+	<textarea class="activities"> <%= session[:message] %>  </textarea>
+
+
+
+
+</div>
+

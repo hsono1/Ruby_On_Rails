@@ -1,0 +1,12 @@
+<%  if flash["success"]  %>
+	<%=  flash["success"] %>
+
+<%  end %>
+
+
+<div class="form">
+		<p>Your Name:</p><input type="text" value="<%= @user.name %>" disabled >
+		<p>Dojo Location:</p><input type="text" value="<%= @user.dojo_location %>" disabled>
+		<p>Favorite Language:</p><input type="text" value="<%= @user.fav_language %>" disabled >
+		<p>Comment:</p><textarea disabled><%= @user.comment %></textarea> 
+</div>

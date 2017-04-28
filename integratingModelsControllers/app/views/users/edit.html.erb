@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit User</title>
+</head>
+<body>
+	<form action="/users/<%= @user_id %>/edit" method="post">
+		<input type="hidden" name="authenticity_token" value="token_value">
+		<input type="text" name="name" value="<%= @user_name %>">
+		<button type="submit">Edit User</button>
+	</form>
+
+</body>
+</html>

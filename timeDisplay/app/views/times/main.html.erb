@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+	<style type="text/css">
+		
+		.wrapper
+		{
+			width: 970px;
+			height: 100%;
+			margin-left: 0px;
+			border: 0px;
+
+		}
+
+		.top{
+
+			border: 1px solid black;
+			display: block;
+			margin-left: 385px;
+			width: 180px;
+			height: 30px;
+			margin-bottom: 20px;
+			text-align: center;
+	
+
+		}
+
+		.bottom{
+
+			border: 1px solid black;
+			display: block;
+			margin-left: 400px;
+			width: 150px;
+			height: 100px;
+			margin-bottom: 20px;
+			text-align: center;
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			The current time and date:
+		</div>
+
+		<div class="bottom">
+			<h4>
+			<%= @time %> <br>
+			<%= @hour %>
+			</h4>	
+		</div>
+	</div>
+</body>
+</html>
+
+

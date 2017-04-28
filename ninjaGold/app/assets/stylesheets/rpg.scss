@@ -1,0 +1,59 @@
+// Place all the styles related to the Rpg controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	width: 970px;
+	height: 500px;
+
+}
+
+form{
+
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	box-shadow: 3px 3px 3px black;
+	text-align: center;
+
+}
+
+form button
+{
+	border-radius: 0%;
+	background-color: white;
+	box-shadow: 3px 3px 3px black;
+	border: 0px;
+	margin-top: 30px;
+}
+
+
+
+.gold_count
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.activities
+{
+	width: 800px;
+	height: 100px;
+}
+
+
+
+
